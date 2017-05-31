@@ -80,6 +80,8 @@ def game_logic():
     while selected > 3 or selected < 1:
         selected = int(input('I said please select 1, 2, or 3!  '))
 
+    # add error handling for non-ints
+
     if actors[(selected - 1)] == correct_actor:
         print('Woot woot!  You know your movies! The correct answer is ' + correct_actor)
         return True
